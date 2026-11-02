@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <style>
+        
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: #f9f9f9;
+        }
+        .cv-container {
+            background: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+        header {
+            border-bottom: 2px solid #0056b3;
+            padding-bottom: 20px;
+            margin-bottom: 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        .header-text h1 {
+            margin: 0 0 5px 0;
+            font-size: 28px;
+            color: #111;
+        }
+        .header-text .title {
+            font-size: 18px;
+            color: #0056b3;
+            font-weight: 600;
+            margin: 0;
+        }
+        .contact-info {
+            text-align: right;
+            font-size: 14px;
+        }
+        .contact-info p {
+            margin: 3px 0;
+        }
+        section {
+            margin-bottom: 25px;
+        }
+        h2 {
+            font-size: 18px;
+            color: #0056b3;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-top: 0;
+        }
+        .job, .edu {
+            margin-bottom: 15px;
+        }
+        .job-title, .edu-title {
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+        }
+        .company, .institution {
+            font-style: italic;
+            color: #666;
+        }
+        ul {
+            margin: 5px 0 0 20px;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 5px;
+        }
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .skills-list li {
+            background: #eee;
+            padding: 5px 12px;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        .actions {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .print-btn {
+            background-color: #0056b3;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .print-btn:hover {
+            background-color: #004085;
+        }
+        
+        @media print {
+            body { background: #fff; padding: 0; }
+            .cv-container { box-shadow: none; padding: 0; }
+            .actions { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="cv-container">
+
+    <header>
+        <div class="header-text">
+            <h1>Muhammad Salahuddin</h1>
+            <p class="title">Software Developer</p>
+        </div>
+        <div class="contact-info">
+            <p><b>Email:</b> muhammadsalahuddin@gmail.com</p>
+            <p><b>Phone:</b> +92 345 678 910</p>
+            <p><b>Location:</b> Jan Muhammad Road, Quetta</p>
+        </div>
+    </header>
+
+    <section>
+        <h2>Professional Summary</h2>
+        <p>Detail-oriented Software Engineering graduate with a solid foundation in Python, Java, and object-oriented programming. Hands-on experience building full-stack web applications through rigorous academic projects and open-source contributions. Eager to leverage strong debugging skills and a passion for clean code in an innovative development team.</p>
+    </section>
+
+    <section>
+        <h2>Work Experience</h2>
+        
+        <div class="job">
+            <div class="job-title">
+                <span>Software Developer</span>
+                <span>2026 - Present</span>
+            </div>
+            <div class="company">Tech Solutions Inc.</div>
+            <ul>
+                <li>Developed and maintained user-facing features using modern web technologies.</li>
+                <li>Collaborated with UI/UX designers to optimize application performance and scalability.</li>
+                <li>Reduced page load times by 25% through efficient code-splitting strategies.</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-title">
+                <span>Junior Web Developer</span>
+                <span>2023 - 2025</span>
+            </div>
+            <div class="company">WebCraft Studio</div>
+            <ul>
+                <li>Built responsive websites for e-commerce clients using HTML, CSS, and JavaScript.</li>
+                <li>Assisted backend teams in API integration and bug debugging.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Education</h2>
+        <div class="edu">
+            <div class="edu-title">
+                <span>B.S. in Computer Science</span>
+                <span>2018 - 2022</span>
+            </div>
+            <div class="institution">HITECH Universty, Islamabad</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Skills</h2>
+        <ul class="skills-list">
+            <li>HTML & CSS</li>
+            <li>JavaScript</li>
+            <li>Git & GitHub</li>
+            <li>Responsive Design</li>
+            <li>Agile Methodology</li>
+        </ul>
+    </section>
+
+<script src="app.js"></script>
+
+</body>
+</html>
